@@ -34,11 +34,14 @@ public class Lampotilamuunnin {
 			public void actionPerformed(ActionEvent e)
 			{
 				// Lasku
+				try {
 				String tulos = cAsteet.getText();
 				double tulos1 = Double.parseDouble(tulos);
 				double lopullinen = (tulos1 * 1.8 + 32);
 				fAsteet.setText("Fahrenheit " + lopullinen);
-
+				} catch (Exception p) {
+					System.out.println("Virheellinen syöte!");
+				}
 			}
 				
 			
