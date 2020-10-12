@@ -13,18 +13,19 @@ public class Sarjallistamista {
 
 	// Otetaan vastaan juoma-automaatti-olio ja kirjoitetaan se XML-muotoisena
 	// tiedostoon
+	
 	public static void kirjoitaTiedostoon(JuomaAutomaatti uus) throws IOException {
 
-		// XML:n kirjoittamista varten
-
+		// Olion kirjoittamista varten
+		
 		FileOutputStream tiedosto = new FileOutputStream("Automaatti.xml");
 		XMLEncoder enc = new XMLEncoder(new BufferedOutputStream(tiedosto));
 
-		// Kirjoitetaan olio XML-muotoiseen tiedostoon
 		enc.writeObject(uus);
 		
 
-		// Lopputoimet tiedostoille
+		// Tiedostojen sulkeminen
+		
 		enc.close();
 		tiedosto.close();
 	}
@@ -36,10 +37,10 @@ public class Sarjallistamista {
 		dec = new XMLDecoder(new BufferedInputStream(tiedosto));
 		JuomaAutomaatti luettu = (JuomaAutomaatti) dec.readObject();
 
-		// Lopputoimet
+		// Sulkeminen
 		dec.close();
 
-		// Palautetaan tiedostosta luettu automaatti
+		// Palautetaan tiedostosta luettu automaatti tiedosto
 		return luettu;
 
 	}
