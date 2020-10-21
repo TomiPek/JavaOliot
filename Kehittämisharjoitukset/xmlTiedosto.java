@@ -13,12 +13,12 @@ import java.io.InputStream;
 import java.util.Scanner;
 
 import jdk.javadoc.internal.doclets.formats.html.SourceToHTMLConverter;
-
+// Harjoitus osa 2 tehtävä 5
 public class xmlTiedosto {
 
 	public static void main(String[] args) throws IOException {
 
-		Kirja uusiKirja = new Kirja("Sune Egyptil�inen", "Waltari, Mika", 1950, 29.90);
+		Kirja uusiKirja = new Kirja("Sune Egyptiläinen", "Waltari, Mika", 1950, 29.90);
 		Kirja toinenKirja = new Kirja("Turms Kuolematon", "Waltari, Mika", 1962, 15.50);
 
 		
