@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="13.0.2" class="java.beans.XMLDecoder">
+ <object class="demo2.Kirja">
+  <void property="hinta">
+   <double>29.9</double>
+  </void>
+  <void property="julkaisuvuosi">
+   <int>1950</int>
+  </void>
+  <void property="tekijä">
+   <string>Waltari, Mika</string>
+  </void>
+  <void property="teoksenNimi">
+   <string>Sune Egyptiläinen</string>
+  </void>
+ </object>
+ <object class="demo2.Kirja">
+  <void property="hinta">
+   <double>15.5</double>
+  </void>
+  <void property="julkaisuvuosi">
+   <int>1962</int>
+  </void>
+  <void property="tekijä">
+   <string>Waltari, Mika</string>
+  </void>
+  <void property="teoksenNimi">
+   <string>Turms Kuolematon</string>
+  </void>
+ </object>
+</java>
