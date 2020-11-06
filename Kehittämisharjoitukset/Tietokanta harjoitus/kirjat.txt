@@ -1,0 +1,7 @@
+// Tehty xampp sovelluksella local tietokanta
+CREATE TABLE `kirjoja` (
+  `KirjanNimi` varchar(30) DEFAULT NULL,
+  `kirjoittaja` varchar(30) DEFAULT NULL,
+  `JulkaisuVuosi` int(7) DEFAULT NULL,
+ 
+INSERT INTO `kirjat` (`KirjanNimi`, `kirjoittaja`, `JulkaisuVuosi`) VALUES
